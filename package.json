@@ -1,0 +1,19 @@
+{
+  "name": "babel-plugin-debug-file-path",
+  "version": "1.0.2",
+  "description": "A Babel plugin that adds file-path attribute to JSX elements",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["babel-plugin", "jsx", "react", "file-path"],
+  "author": "Rahul Bhangale",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-react": "^7.27.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
