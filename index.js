@@ -21,14 +21,14 @@ module.exports = function ({ types: t }) {
 
         // Avoid duplicates
         const hasAttr = pathNode.node.attributes.some(
-          attr => attr.name && attr.name.name === 'file-loc'
+          attr => attr.name && attr.name.name === 'fileLoc'
         );
         if (hasAttr) return;
 
         // file-loc="relativePath:lineNumber"
         pathNode.node.attributes.push(
           t.jsxAttribute(
-            t.jsxIdentifier('file-loc'),
+            t.jsxIdentifier('fileLoc'),
             t.stringLiteral(`${relativePath}:${lineNumber}`)
           )
         );
